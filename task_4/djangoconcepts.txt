@@ -1,0 +1,16 @@
+CONTEXT MANAGERS
+
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File is automatically closed here
+
+
+VIRTUAL ENVIRONTMENTS ALLOW FOR USE OF MULTIPLE VERSIONS OF DJANGO OR OTHER UTILITIES
+
+python -m venv env
+source env/bin/activate  # (Linux/macOS)
+env\Scripts\activate     # (Windows)
+
+DJANGO RESPONSE CYCLE
+
+REQUEST->URL.PY->VIEWS.PY->FETCHING MODEL->VIEWS RETURNS TEMPLAYE->RESPONSE
