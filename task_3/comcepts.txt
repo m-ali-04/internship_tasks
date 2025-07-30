@@ -1,0 +1,38 @@
+--> MODEL VIEW TEMPLATE ARCHTECTURE
+
+MVT is Django's Architecture where Models, Views and Templates control how the application works
+
+Every object or instance is a model and is mapped to a database (usually automatically maintained according to class definiton)
+
+Views are logic handling instances where requests are recieved and entertained, data is processed and responses are returned
+
+Templates are endpoints such as HTML pages and can have Statics and other helpers such as JS
+
+
+--> GET, POST, DELETE, PUT, PATCH 
+
+GET retrieve items
+/products/ returns all products
+/products/4/ returns product id 4
+
+POST inserts an item
+
+DELETE removes items
+
+PUT replaces a whole item, all fields must be sent
+
+PATCH replaces the fields of item that are sent
+
+REQUESTS ARE STATELESS AND ARE SENT IN FORMS SUCH AS JSON
+
+such as
+
+POST /books/
+Content-Type: application/json
+
+{
+  "title": "1984",
+  "author": "George Orwell",
+  "year": 1949
+}
+
